@@ -6,3 +6,5 @@ reg delete HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon\Paramet
 
 REM Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers registry
 reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0 /v RestrictSendingNTLMTraffic /f
+
+gpupdate /force
